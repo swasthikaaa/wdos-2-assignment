@@ -1,0 +1,221 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color:#FF7F7F;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+#hero {
+    background: url('./m&s.jpg') no-repeat center center/cover;
+    color:#fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display:flex;
+    gap:20px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  width: 200px;  
+  height: auto; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+.card h3 {
+  margin: 0 0 5px 0;
+}
+.card p {
+  margin: 0;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    font-size: 1em;
+    color: #666;
+}
+.card .buy-now {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #45a049;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.card .buy-now:hover {
+  background-color:#45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*footer*/
+.footer {
+    background-color: #0e0606;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font:white;
+    font-size: smaller;
+  
+  }
+  
+  .footer h3 {
+    margin-top: 0;
+  }
+  
+  .contact-info {
+    flex: 1;
+    color: white;
+  }
+  
+  .social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    margin-bottom: 20px;
+  }
+  .social-media ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .social-media ul li a:hover {
+    color: green;
+  }
+  
+  .quick-links {
+    color: white;
+    flex: 1;
+    text-align: right;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 20px;
+  }
+  .quick-links ul li a {
+    color: white; 
+    text-decoration: none;
+  }
+  .quick-links ul li a:hover {
+    color: green;
+  }
+  .footer .copyright {
+    flex: 1;
+    text-align: center;
+    color: white;
+  }
+  

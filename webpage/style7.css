@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #c5e0ff,#ffffff);
+}
+h1 {
+  margin: 40px;
+}
+
+p{
+  margin: 40px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Media Queries */
+.product-card {
+  width: 50%; 
+}
+
+@media screen and (max-width: 768px) {
+  .product-card {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+      padding: 30px 0;
+  }
+}
+
+h2{
+  text-align: center;
+}
+header {
+  background-color: #333;
+  padding: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+nav ul li a.active {
+    background-color: #4CAF50;
+}
+
+.dairy-products {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  position: relative;
+  flex: 0 0 calc(20% - 20px); 
+  max-width: calc(20% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+}
+
+.text-container {
+  position: absolute;
+  bottom: 10px; 
+  left: 0;
+  width: 100%; 
+  text-align: center;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.product-card a {
+  display: inline-block; 
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card a:hover {
+  background-color: #45a049;
+}
+
+/*footer*/
+.footer {
+    background-color: #0e0606;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font:white;
+    font-size: smaller;
+  
+  }
+  
+  .footer h3 {
+    margin-top: 0;
+  }
+  
+  .contact-info {
+    flex: 1;
+    color: white;
+  }
+  
+  .social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    margin-bottom: 20px;
+  }
+  .social-media ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .social-media ul li a:hover {
+    color: green;
+  }
+  
+  .quick-links {
+    color: white;
+    flex: 1;
+    text-align: right;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 20px;
+  }
+  .quick-links ul li a {
+    color: white; 
+    text-decoration: none;
+  }
+  .quick-links ul li a:hover {
+    color: green;
+  }
+  .footer .copyright {
+    flex: 1;
+    text-align: center;
+    color: white;
+  }
+  
+

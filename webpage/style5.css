@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,#d4b8c3, #e7b4df);
+}
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+}
+
+.product-table img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.order-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #25ec7f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.order-link:hover {
+    background-color: #00b309;
+}
+/*footer*/
+.footer {
+    background-color: #0e0606;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font:white;
+    font-size: smaller;
+  
+  }
+  
+  .footer h3 {
+    margin-top: 0;
+  }
+  
+  .contact-info {
+    flex: 1;
+    color: white;
+  }
+  
+  .social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    margin-bottom: 20px;
+  }
+  .social-media ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .social-media ul li a:hover {
+    color: green;
+  }
+  
+  .quick-links {
+    color: white;
+    flex: 1;
+    text-align: right;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 20px;
+  }
+  .quick-links ul li a {
+    color: white; 
+    text-decoration: none;
+  }
+  .quick-links ul li a:hover {
+    color: green;
+  }
+  .footer .copyright {
+    flex: 1;
+    text-align: center;
+    color: white;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    

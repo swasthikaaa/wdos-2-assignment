@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="./style6.css"> <!-- CSS File -->
+    
+    <!-- Favicon for the website -->
+    <link rel="shortcut icon" type="image/png" href="C:\Users\user\Downloads\Blue and White Circle Retail Logo (1) (1).png"/>
+    
+    <!-- Web manifest for Progressive Web App configuration -->
+    <link rel="manifest" href="https://progressier.app/xeAfGpPlAy3xcQCY00q9/progressier.json"/>
+    
+    <!-- Script for Progressive Web App functionality -->
+    <script defer src="https://progressier.app/xeAfGpPlAy3xcQCY00q9/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <h1>Order Your Groceries</h1>
+    <header>
+        <!-- Hamburger Menu -->
+        <nav class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span class="material-icons">menu</span>
+            </label>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About us.html">About Us</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./Loyalty registration.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+        <!-- Cart and Favorites Icons -->
+        <div class="icon-container">
+            <span class="material-icons">shopping_cart</span>
+            <span class="material-icons">favorite</span>
+        </div>
+    </header>
+    
+    <!-- Form for selecting and adding grocery items -->
+    <form id="groceryForm">
+        <div class="category">
+            <h3>Fruits</h3>
+            <select id="fruits">
+                <option value="">Select Fruit</option>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+                <option value="grape">Grape</option>
+                <option value="mango">Mango</option>
+                <option value="strawberry">Strawberry</option>
+            </select>
+            <input type="number" id="fruitsQty" placeholder="Kgs">
+        </div>
+        
+        <div class="category">
+            <h3>Vegetables</h3>
+            <select id="vegetables">
+                <option value="">Select Vegetable</option>
+                <option value="carrot">Carrot</option>
+                <option value="broccoli">Broccoli</option>
+                <option value="spinach">Spinach</option>
+                <option value="potato">Potato</option>
+                <option value="tomato">Tomato</option>
+                <option value="onion">Onion</option>
+            </select>
+            <input type="number" id="vegetablesQty" placeholder="Kgs">
+        </div>
+        
+        <div class="category">
+            <h3>Dairy Produce</h3>
+            <select id="dairy">
+                <option value="">Select Dairy Product</option>
+                <option value="milk">Milk</option>
+                <option value="cheese">Cheese</option>
+                <option value="butter">Butter</option>
+                <option value="yogurt">Yogurt</option>
+                <option value="cream">Cream</option>
+                <option value="eggs">Eggs</option>
+            </select>
+            <input type="number" id="dairyQty" placeholder="Quantity">
+        </div>
+        
+        
+        <div class="category">
+            <h3>Meat and Seafood</h3>
+            <select id="meat">
+                <option value="">Select Meat/Seafood</option>
+                <option value="chicken">Chicken</option>
+                <option value="beef">Beef</option>
+                <option value="pork">Pork</option>
+                <option value="fish">Fish</option>
+            </select>
+            <input type="number" id="meatQty" placeholder="Kgs">
+        </div>
+        
+        <div class="category">
+            <h3>Baking and Cooking Ingredients</h3>
+            <select id="baking">
+                <option value="">Select Ingredient</option>
+                <option value="flour">Flour</option>
+                <option value="sugar">Sugar</option>
+                <option value="salt">Salt</option>
+                <option value="baking_powder">Baking Powder</option>
+                <option value="oil">Oil</option>
+                <option value="yeast">Yeast</option>
+            </select>
+            <input type="number" id="bakingQty" placeholder="Quantity">
+        </div>
+        
+        <div class="category">
+            <button type="button" onclick="addToFavourites()">Add to Favourites</button>
+            <button type="button" onclick="applyFavourites()">Apply Favourites</button>
+        </div>
+        
+        <!-- Table to display items in the cart -->
+        <table id="cart">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td id="totalPrice">Rs.0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <button type="button" onclick="proceedToCheckout()">Buy Now</button>
+    </form>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="./order.js"></script>
+    
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About us.html">About Us</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./Loyalty registration.html">Loyalty Registration</a></li>
+            </ul>
+        </div>
+        
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://facebook.com">Facebook</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+            </ul>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Phone: 0811234567</p>
+            <p>Email: freshharvest@gmail.com</p>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 Fresh Harvest. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

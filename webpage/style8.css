@@ -1,0 +1,247 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url(./payment.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6); /* Increased transparency for better background visibility */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1; /* Ensure the form is on top of the background image */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: wheat;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.order-summary {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.thank-you-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  fieldset {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info,
+  .social-media,
+  .quick-links {
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+  }
+
+  .quick-links ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .navbar a {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer h3, .footer p {
+    font-size: smaller;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0e0606;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  font-size: smaller;
+  margin-top: 20px;
+}
+
+.footer h3 {
+  margin-top: 0;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.social-media {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  margin-bottom: 20px;
+}
+
+.social-media ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media ul li a:hover {
+  color: green;
+}
+
+.quick-links {
+  flex: 1;
+  text-align: right;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 20px;
+}
+
+.quick-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+  color: green;
+}
+
+.footer .copyright {
+  flex: 1;
+  text-align: center;
+}
